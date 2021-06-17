@@ -10,7 +10,7 @@ Category.init({
     primaryKey: true,
     autoIncrement: true,
   },
-  Recipe_name: {
+  Category_name: {
     type: DataTypes.STRING,
     allowNull: false,
   },
