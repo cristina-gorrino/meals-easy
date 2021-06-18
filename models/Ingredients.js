@@ -15,6 +15,10 @@ Ingredient.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    ingredient_amount: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     recipe_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
