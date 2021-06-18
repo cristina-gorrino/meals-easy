@@ -25,8 +25,6 @@ ShoppingCart.init({
   total_amount: {
     type: DataTypes.INTEGER,
     allowNull: false,
-    primaryKey: true,
-    autoIncrement: true,
   },
   order_number: {
     type: DataTypes.STRING,
