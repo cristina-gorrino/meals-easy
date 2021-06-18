@@ -1,0 +1,9 @@
+[
+  {
+    username: "Greg",
+    userAddress: "1234 Coding Street",
+    phone: "(760)555-5555",
+    email: "learnCoding@gmail.com",
+    password: "root12345",
+  },
+];
