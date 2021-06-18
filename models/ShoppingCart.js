@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class shopping_cart extends Model {}
+class ShoppingCart extends Model {}
 
 ShoppingCart.init({
   id: {
@@ -9,6 +9,14 @@ ShoppingCart.init({
     allowNull: false,
     primaryKey: true,
     autoIncrement: true,
+  },
+  customer_id: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    references: {
+      model: "user",
+      key: "id",
+    },
   },
   order_date: {
     type: DataTypes.STRING,
@@ -28,7 +36,7 @@ ShoppingCart.init({
   timestamps: false,
   freezeTableName: true,
   underscored: true,
-  modelName: "recipe",
+  modelName: "shopping_cart",
 });
 
-module.exports = Recipe;
+module.exports = ShoppingCart;
