@@ -19,49 +19,22 @@ const seedDatabase = async () => {
   console.log(typeof shoppingCartData, typeof shoppingCartData[0].customer_id);
   await sequelize.sync({ force: true });
 
-  // await userData();
-  // await categoryData();
-  // await ingredientsData();
-  // await orderItemData();
-  // await recipeData();
-  // await shoppingCartData();
   const users = await User.bulkCreate(userData, {
     individualHooks: true,
     returning: true,
   });
 
   const category = await Category.bulkCreate(categoryData);
+  const recipe = await Recipe.bulkCreate(recipeData);
   const ingredient = await Ingredients.bulkCreate(ingredientsData);
-  const orderItem = await OrderItem.bulkCreate(orderItemData);
-  const recipe = await Recipe.bulkBuild(recipeData);
-  const shoppingCart = await ShoppingCart.bulkCreate(shoppingCartData);
-  // for (const category of categoryData) {
-  //   await Category.create({
-  //     ...category,
-  //   });
-  // }
-  // for (const ingredient of ingredientsData) {
-  //   await Ingredients.create({
-  //     ...ingredient,
-  //   });
-  // }
-  // for (const orderItem of orderItemData) {
-  //   await OrderItem.create({
-  //     ...orderItem,
-  //   });
-  // }
-  // for (const recipe of recipeData) {
-  //   await Recipe.create({
-  //     ...recipe,
-  //   });
-  // }
 
-  // for (const shoppingCart of shoppingCartData) {
-  //   await ShoppingCart.create({
-  //     ...shoppingCart,
-  //     order_date: Date.now(),
-  //   });
-  // }
+  for (const shoppingCart of shoppingCartData) {
+    await ShoppingCart.create({
+      ...shoppingCart,
+      order_date: Date.now(),
+    });
+  }
+  const orderItem = await OrderItem.bulkCreate(orderItemData);
 
   process.exit(0);
 };
