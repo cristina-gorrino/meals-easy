@@ -1,8 +1,8 @@
 const express = require("express");
 const session = require("express-session");
 const path = require("path");
-const logger = require("morgan");
-const cookieParser = require("cookie-parser");
+// const logger = require("morgan");
+// const cookieParser = require("cookie-parser");
 const expressHbs = require("express-handlebars");
 const routes = require("./controllers");
 const helpers = require("./utils/helpers");
@@ -12,18 +12,18 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const app = express();
 
-app.use(express.json());
+//app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(logger("dev"));
-app.use(cookieParser());
+//app.use(logger("dev"));
+//app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, "public")));
 
-// res.locals is an object passed to hbs engine
-app.use((req, res, next) => {
-  res.locals.session = req.session;
-  next();
-});
+// // res.locals is an object passed to hbs engine
+// app.use((req, res, next) => {
+//   res.locals.session = req.session;
+//   next();
+// });
 
 //TEMPORARY
 // const index = require("./routes/index");
@@ -47,7 +47,7 @@ const sess = {
 
 app.use(session(sess));
 
-// Inform Express.js on which template engine to use
+// // Inform Express.js on which template engine to use
 app.engine("hbs", hbs.engine);
 app.set("view engine", "hbs");
 
