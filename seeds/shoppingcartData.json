@@ -2,6 +2,9 @@
     {
         "customer_id": 1,
         "total_amount": 16,
-        "order_number": 1
+        "order_number": 1,
+        "recipe_id": 1,
+        "quantity": 1
+
     }
 ]
