@@ -23,14 +23,27 @@ ShoppingCart.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    total_amount: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
     order_number: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    recipe_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "recipe",
+        key: "id",
+      },
+    },
+    quantity: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    total_amount: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+
   },
   {
     sequelize,
