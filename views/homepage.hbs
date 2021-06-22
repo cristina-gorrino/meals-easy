@@ -1,24 +1,17 @@
 <div>
     {{#each recipes as |recipe|}}
   <div class="row">
+    <div class="card">
+                <img src="." alt="">
+                <h3>Vegan</h3>
+                <h4>{{recipe.recipe_name}}</h4>
+                <p>{{recipe.recipe_description}}
+                </p>
+                <p>
+                  ${{recipe.unit_price}}
+                </p>
+                <a href="#" class="btn">More Info</a>
+            </div>
   
-      <div class="col-sm-6 col-sm-4">
-        <div class="thumbnail">
-          <!--<img class="imag-responsive" src="{{recipe.imagePath}}" alt="..." /> -->
-          <div class="caption">
-            <h3>{{recipe.recipe_name}}</h3>
-            <p class="description"> {{recipe.recipe_description}}  </p>
-            <div class="clearfix">
-              <div class="price pull-lest">${{recipe.unit_price}}</div>
-              <a
-                href="#"
-                class="btn btn-success pull-right"
-                role="button"
-              >Add to cart</a></div>
-          </div>
-        </div>
-      </div>
-
-  </div>
 {{/each}}
 </div>
