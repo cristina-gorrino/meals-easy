@@ -5,10 +5,9 @@ const withAuth = require("../utils/auth");
 /** Get home page */
 router.get("/", async (req, res) => {
   try {
-    const recipeData = await Recipe.findAll({
-    });
+    const recipeData = await Recipe.findAll({});
     const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
-
+    console.log(recipes);
     res.render("homepage", {
       recipes,
       logged_in: req.session.logged_in,
