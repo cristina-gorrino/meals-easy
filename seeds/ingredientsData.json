@@ -43,5 +43,265 @@
         "ingredient_name": "Whole Wheat Pastry Flour",
         "ingredient_amount": "1/3 cup",
         "recipe_id": 1
+    },
+    {
+        "ingredient_name": "Ripe bananas",
+        "ingredient_amount": "2",
+        "recipe_id": 5
+    },
+    {
+        "ingredient_name": "All-purpose Flour",
+        "ingredient_amount": "3.25 cups",
+        "recipe_id": 5
+    },
+    {
+        "ingredient_name": "Baking Soda",
+        "ingredient_amount": "1 teaspoon",
+        "recipe_id": 5
+    },
+    {
+        "ingredient_name": "Baking Soda",
+        "ingredient_amount": "1 teaspoon",
+        "recipe_id": 5
+    },
+    {
+        "ingredient_name": "Salt",
+        "ingredient_amount": "1/2 teaspoon",
+        "recipe_id": 5
+    },
+    {
+        "ingredient_name": "Cornstarch",
+        "ingredient_amount": "1 tablespoon",
+        "recipe_id": 5
+    },
+    {
+        "ingredient_name": "Unsalted Butter, room temperature",
+        "ingredient_amount": "1 cup",
+        "recipe_id": 5
+    },
+    {
+        "ingredient_name": "Light Brown Sugar, packed",
+        "ingredient_amount": "1 cup",
+        "recipe_id": 5
+    },
+    {
+        "ingredient_name": "Granulated Sugar",
+        "ingredient_amount": "1/2 cup",
+        "recipe_id": 5
+    },
+    {
+        "ingredient_name": "Milk Chocolate Chips, divided",
+        "ingredient_amount": "2 cups",
+        "recipe_id": 5
+    },
+    {
+        "ingredient_name": "Chicken Breast, pounded",
+        "ingredient_amount": "24 oz",
+        "recipe_id": 4
+    },
+    {
+        "ingredient_name": "Mozzarella Chesse, shredded",
+        "ingredient_amount": "8 oz",
+        "recipe_id": 4
+    },
+    {
+        "ingredient_name": "Spaghetti Sauce",
+        "ingredient_amount": "12 oz",
+        "recipe_id": 4
+    },
+    {
+        "ingredient_name": "Parsley, chopped",
+        "ingredient_amount": "2 teaspoons",
+        "recipe_id": 4
+    },
+    {
+        "ingredient_name": "Flour, seasoned",
+        "ingredient_amount": "1 cup",
+        "recipe_id": 4
+    },
+    {
+        "ingredient_name": "Breadcrumbs, Italian seasoning",
+        "ingredient_amount": "2 cups",
+        "recipe_id": 4
+    },
+    {
+        "ingredient_name": "Eggs, large",
+        "ingredient_amount": "2",
+        "recipe_id": 4
+    },
+    {
+        "ingredient_name": "Milk",
+        "ingredient_amount": "2 oz",
+        "recipe_id": 4
+    },
+    {
+        "ingredient_name": "Vegetable Oil",
+        "ingredient_amount": "1/4 cup",
+        "recipe_id": 4
+    },
+    {
+        "ingredient_name": "Boneless Pork Butt or Loin",
+        "ingredient_amount": "2-3 pounds",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "White Onion, roughly chopped",
+        "ingredient_amount": "1",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "Large Pineapple, peeled and cored",
+        "ingredient_amount": "1",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "Orange Juice",
+        "ingredient_amount": "1/2 cup",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "Distilled White Vinegar",
+        "ingredient_amount": "1/4 cup",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "Ancho Chilli Powder",
+        "ingredient_amount": "2 tablespoons",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "Garlic, minced",
+        "ingredient_amount": "4 cloves",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "Chipotle in adobo",
+        "ingredient_amount": "1",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "Salt",
+        "ingredient_amount": "1.5 teaspoons",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "Mexican Oregano, dried",
+        "ingredient_amount": "1 teaspoon",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "Limes, cut into wedges",
+        "ingredient_amount": "2",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "Chopped Cilantro",
+        "ingredient_amount": "1/2 cup",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "Small Red Onion, diced",
+        "ingredient_amount": "1",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "Small Corn Tortillas",
+        "ingredient_amount": "12",
+        "recipe_id": 3
+    },
+    {
+        "ingredient_name": "Lo Mein Noodles, dry",
+        "ingredient_amount": "4-5 oz",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Soy Sauce",
+        "ingredient_amount": "3 tablespoons",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Chinese Cooking Wine",
+        "ingredient_amount": "2 tablespoons",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Oyster Sauce",
+        "ingredient_amount": "1 tablespoon",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Sesame Oil",
+        "ingredient_amount": "2 teaspoons",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Honey",
+        "ingredient_amount": "1 teaspoon",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Liquid Smoke",
+        "ingredient_amount": "1/4 teaspoon",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "White Pepper",
+        "ingredient_amount": "1/8 teaspoon",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Sriracha",
+        "ingredient_amount": ".5 - 1 teaspoon",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Peanut oil",
+        "ingredient_amount": "2 tablespoons",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Onion, thinly sliced",
+        "ingredient_amount": "1/2",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Mushrooms, thinly sliced",
+        "ingredient_amount": "2 cups",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Garlic, roughly chopped",
+        "ingredient_amount": "3 cloves",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Ginger, minced",
+        "ingredient_amount": "1 teaspoon",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Red Bell Pepper, thinly sliced",
+        "ingredient_amount": "1/2",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Carrots, cut into matchsticks",
+        "ingredient_amount": "1 cup",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Cabbage, shredded",
+        "ingredient_amount": "1 cup",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Snow Peas",
+        "ingredient_amount": "1 cup",
+        "recipe_id": 2
+    },
+    {
+        "ingredient_name": "Scallions, sliced",
+        "ingredient_amount": "1/4 cup",
+        "recipe_id": 2
     }
 ]
