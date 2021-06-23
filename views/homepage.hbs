@@ -1,0 +1,16 @@
+
+    {{#each recipes as |recipe|}}
+  <div class="row">
+    <div class="card">
+                <img src="." alt="">
+                <h3>{{recipe.category.Category_name}}</h3>
+                <h4>{{recipe.recipe_name}}</h4>
+                <p>{{recipe.recipe_description}}
+                </p>
+                <p>
+                  ${{recipe.unit_price}}
+                </p>
+                <a href="#" class="btn">More Info</a>
+            </div>
+  
+{{/each}}

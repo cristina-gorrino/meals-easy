@@ -21,22 +21,22 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    userAddress: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    phone: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-
     email: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
       validate: {
         isEmail: true,
-      },
+    },
+  },
+    userAddress: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    phone: {
+      type: DataTypes.STRING,
+      allowNull: true,
+
     },
 
     password: {
