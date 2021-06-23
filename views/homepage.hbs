@@ -1,9 +1,9 @@
-<div>
+
     {{#each recipes as |recipe|}}
   <div class="row">
     <div class="card">
                 <img src="." alt="">
-                <h3>Vegan</h3>
+                <h3>{{recipe.category.Category_name}}</h3>
                 <h4>{{recipe.recipe_name}}</h4>
                 <p>{{recipe.recipe_description}}
                 </p>
@@ -14,4 +14,3 @@
             </div>
   
 {{/each}}
-</div>
