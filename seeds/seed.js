@@ -3,7 +3,6 @@ const {
   User,
   Category,
   Ingredients,
-  OrderItem,
   Recipe,
   ShoppingCart,
 } = require("../models");
@@ -11,7 +10,6 @@ const {
 const userData = require("./userData.json");
 const categoryData = require("./categoryData.json");
 const ingredientsData = require("./ingredientsData.json");
-const orderItemData = require("./orderItemData.json");
 const recipeData = require("./recipeData.json");
 const shoppingCartData = require("./shoppingCartData.json");
 
@@ -34,7 +32,6 @@ const seedDatabase = async () => {
       order_date: Date.now(),
     });
   }
-  const orderItem = await OrderItem.bulkCreate(orderItemData);
 
   process.exit(0);
 };

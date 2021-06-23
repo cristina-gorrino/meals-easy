@@ -1,9 +1,43 @@
 [
     {
         "recipe_name": "Strawberry Banana Stuffed Pancakes",
-        "recipe_description": "Instructions: \n Mix together the Greek yogurt, 1/4 cup banana, egg whites, and vanilla extract into a small bowl. \n In a separate bowl combine flour, baking soda, 1/2 teaspoon sugar, and salt.\n Combine both bowls and whisk until evenly mixed.\nFold in 5 fresh, chopped strawberries.\n Place 1/4-cup batter onto a non-stick skillet over medium heat and cook until bubbles start appearing through the top of the pancake. Flip (about 2 minutes on each side).\n For the sauce: Add 1/4 cup mashed banana, 5 frozen strawberries, and 1 teaspoon of sugar in a sauce pan (if you use fresh strawberries, add 1 tablespoon of water to the sauce pan). Cook on low, stirring frequently until thickened (about 5-7 minutes.)\n Evenly divide sauce over top of pancakes",
+        "recipe_description": "A delicious treat for breakfast",
+        "recipe_instructions": "Instructions: \n Mix together the Greek yogurt, 1/4 cup banana, egg whites, and vanilla extract into a small bowl. \n In a separate bowl combine flour, baking soda, 1/2 teaspoon sugar, and salt.\n Combine both bowls and whisk until evenly mixed.\nFold in 5 fresh, chopped strawberries.\n Place 1/4-cup batter onto a non-stick skillet over medium heat and cook until bubbles start appearing through the top of the pancake. Flip (about 2 minutes on each side).\n For the sauce: Add 1/4 cup mashed banana, 5 frozen strawberries, and 1 teaspoon of sugar in a sauce pan (if you use fresh strawberries, add 1 tablespoon of water to the sauce pan). Cook on low, stirring frequently until thickened (about 5-7 minutes.)\n Evenly divide sauce over top of pancakes",
         "number_servings": 2,
         "unit_price": 15.99,
         "category_id": 2
+    },
+    {
+        "recipe_name": "Vegan Lo Mein",
+        "recipe_description": "On the table in under 20 minutes! Loaded up with healthy veggies, this VEGAN dinner recipe is fast and easy, perfect for busy weeknights!",
+        "recipe_instructions": "Set water to boil and cook the noodles according to directions on the package. \nStir together the Lo mein Sauce ingredients in a small bowl. \nPrep any and all veggies and set near the stove. \nIn a wok or large skillet, heat oil over medium-high heat. Add the onions and mushrooms and saute 3-4 minutes, stirring continuously. Turn heat to medium, add the garlic and ginger and saute 2 minutes. Add the bell pepper, carrots, cabbage and snow peas and stir often, just letting them get tender, but still crisp, 3-4 minutes. \nAdd the noodles and give a good stir and toss a few times to incorporate. \nAdd the Lo Mein Sauce and stir and toss continuously 2 minutes. If it gets too dry add a little splash of water to loosen. \nServe in two bowls, garnish with green onion.",
+        "number_servings": 2,
+        "unit_price": 18,
+        "category_id": 1
+    },
+    {
+        "recipe_name": "Tacos al pastor",
+        "recipe_description": "A simple and yet tasty meal for the whole family. Try our al pastor tacos it will sure be a hit at your next gathering.",
+        "recipe_instructions": "Use a sharp knife to slice pork into thin slices. Place in a large mixing bowl or resealable plastic bag. \nCut the pineapple into 2-inch wide spears. Dice approximately 1 cup of pineapple and set the rest of the spears aside. \nAdd the roughly chopped onion into a blender along with 1 cup of the cubed pineapple. Add in orange juice, white vinegar, chipotle, chile powder, garlic, salt, and oregano. Puree until smooth. \nPour marinade over pork. Refrigerate and let marinate at least 4 hours. \nHeat a skillet or grill to high heat. Working in small batches, sear each slice of pork until cooked through, 2 to 4 minutes. At the same time, grill pineapple until lightly charred. Roughly chop the cooked pork and dice cooked pineapple. \nServe meat up hot on a warmed tortilla topped with freshly chopped cilantro, diced grilled pineapple, sliced red onion, and a lime wedge.",
+        "number_servings": 2,
+        "unit_price": 15.99,
+        "category_id": 3
+    },
+    {
+        "recipe_name": "Chicken parmesan",
+        "recipe_description": "It’s such an easy dish to make, that you’d think it’s always the perfect meal to get.",
+        "recipe_instructions": "Place the chicken breasts on a cutting board lined with plastic wrap. Cover the chicken with another sheet of plastic wrap and using a meat hammer lightly pound the chicken breasts (see notes). \nSet up a breading station with flour seasoned with sea salt and black pepper, egg wash and Italian seasoned bread crumbs. \nCoat the chicken breasts with the seasoned flour. Then place in the egg wash and finally in the bread crumbs. Make sure you get a good coating of each ingredient on the chicken breasts, completely coating them. \nHeat a large saute pan on high heat and add about a half an inch of vegetable oil. Carefully place the breaded chicken cutlets into the oil using tongs. Add as many as you can into your pan without crowding them. \nLet them saute until they get a nice golden brown color. Using tongs turn them over and saute the other side until golden brown. \nDrain the fried chicken cutlets on baking racks over sheet pans (or baking sheets). \nPlace the fried chicken cutlets in a baking dish. Top each cutlet with about ⅓ cup of spaghetti sauce, covering the chicken cutlet. \nAdd two ounces of shredded mozzarella cheese on top of the marinara sauce.\n Sprinkle the chopped parsley on top of the mozzarella cheese.\n Bake at 350 degrees F for 20 minutes or until the cheese is nicely melted.\n*make sure the fried chicken cutlet has reached a minimum internal temperature of 165 degrees F.\n Remove from the oven and serve immediately with your favorite pasta.",
+        "number_servings": 2,
+        "unit_price": 25,
+        "category_id": 4
+    },
+    {
+        "recipe_name": "Banana chocolate chip cookies",
+        "recipe_description": "A small twist to a chocolate chip classic.",
+        "recipe_instructions": "Begin by mashing up two overripe bananas in a small bowl with a fork. I tried to add the whole bananas right into the cookie dough without mashing them first but there were still large visible chunks. This doesn’t work as you don’t want to overmix your dough trying to get those chunks out… it could lead to a gummy cookie.\n Set the bananas aside and grab a medium mixing bowl for the dry ingredients. Add the flour, baking soda, salt, and cornstarch into the bowl and whisk together. Set this bowl aside too. \n In a large mixing bowl, add in the butter and both sugars and beat until fluffy. Add in the vanilla and bananas and beat just until the bananas are worked in. At this point, mix as little as possible to avoid the tough, gummy cookie.\n Dump the dry ingredients into the large mixing bowl and mix just until the flour is worked in. Add in the semi-sweet or milk chocolate chips and stir with a spatula. Scoop the cookies out onto a baking sheet, top with additional chocolate chips and bake at 350 degrees F for 10-12 minutes until the edges are golden brown. There you have it, a tasty little bundle of chocolate chip banana bread in cookie form!",
+        "number_servings": 4,
+        "unit_price": 8.99,
+        "category_id": 5
     }
+    
 ]
