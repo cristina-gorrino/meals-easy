@@ -57,7 +57,7 @@ nav ul li a.active {
 .banner {
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./img/bg.jpg") no-repeat center center/cover;
+    url("") no-repeat center center/cover;
   width: 100%;
   border-bottom: 5px solid red;
 }
@@ -91,53 +91,6 @@ nav ul li a.active {
 .inner-text a:hover {
   opacity: 0.8;
 }
-
-/* NewsLetter */
-.newsletter {
-  min-height: 20vh;
-  width: 100%;
-  background: #181818;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.newsletter-content {
-  max-width: 500px;
-  text-align: justify;
-  font-size: 16px;
-  background: red;
-  padding: 10px 50px;
-  color: #fff;
-}
-
-.subsribe {
-  max-width: 500px;
-  padding: 10px 40px;
-}
-
-.subsribe input {
-  display: inline-block;
-  height: 40px;
-  width: 400px;
-  padding: 10px;
-  font-size: 18px;
-  border: 0;
-  color: #000;
-  outline: none;
-}
-
-.subsribe button {
-  display: inline-block;
-  padding: 10px 40px;
-  border: 0;
-  outline: none;
-  background: #000;
-  color: #f3f3f3;
-  margin-top: 5px;
-  cursor: pointer;
-}
-
 ::placeholder {
   color: #555;
 }
@@ -210,14 +163,6 @@ footer span {
   color: red;
 }
 
-/* About Part */
-.about {
-  min-height: 100vh;
-  width: 100%;
-  background: #f6f6f6;
-  padding: 100px 0;
-}
-
 .inner-content {
   max-width: 900px;
   margin: 0 auto;
@@ -252,20 +197,6 @@ footer span {
 
 .inner-content .details .card p {
   width: 500px;
-}
-
-/* Contact Part */
-.contact {
-  min-height: 100vh;
-  width: 100%;
-  background: #f3f3f3;
-  padding: 150px 0;
-}
-
-.contact-details {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .inner-part {
@@ -329,11 +260,6 @@ form input[type="submit"] {
     padding: 10px 12px;
     font-size: 15px;
   }
-  .newsletter {
-    flex-direction: column;
-    padding: 30px 0px;
-    text-align: center;
-  }
   .inner-info {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
@@ -346,18 +272,6 @@ form input[type="submit"] {
     justify-content: center;
     padding: 50px;
   }
-  .contact {
-    padding: 80px 0;
-    text-align: center;
-  }
-  .contact-details {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .form {
-    margin: 10px 0;
-    text-align: center;
-  }
 }
 
 @media (max-width: 750px) {
@@ -367,12 +281,6 @@ form input[type="submit"] {
   nav ul li a {
     padding: 8px 10px;
     font-size: 13px;
-  }
-  .newsletter {
-    padding: 30px 0px;
-  }
-  .newsletter-content {
-    margin: 10px;
   }
   .inner-info {
     grid-template-columns: 1fr;
