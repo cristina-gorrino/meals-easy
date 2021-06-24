@@ -1,0 +1,18 @@
+
+<h1>{{recipe_name}}</h1>
+<p>{{recipe_description}}</p>
+
+<div class="card">
+    <h2>Ingredients</h2>
+    <ul>
+    {{#each ingredients as |ingredient|}}
+    <li><span>{{ingredient.ingredient_amount}}</span> <span>{{ingredient.ingredient_name}}</span></li>
+    {{/each}}
+    </ul>
+
+</div>
+
+<div>
+    <h3>Instructions</h3>
+    <p>{{recipe_instructions}}</p>
+</div>
