@@ -1,6 +1,6 @@
 
     {{#each recipes as |recipe|}}
-  <div class="row">
+  <!-- <div class="row"> -->
     <div class="card">
                 <img src="." alt="">
                 <h3>{{recipe.category.Category_name}}</h3>
@@ -10,7 +10,7 @@
                 <p>
                   ${{recipe.unit_price}}
                 </p>
-                <a href="#" class="btn">More Info</a>
+                <a href="/recipe/{{recipe.id}}" class="btn">More Info</a>
             </div>
   
 {{/each}}
