@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Recipe, Category, User, OrderItem } = require("../models");
+const { Recipe, Category, User } = require("../models");
 const withAuth = require("../utils/auth");
 const Cart = require("../models/Cart");
 
@@ -132,6 +132,7 @@ router.get("/recipe/:id", async (req, res) => {
     res.status(500).json(error);
   }
 });
+
 
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
