@@ -1,13 +1,12 @@
-const { response } = require("express");
 //fetch the data from form
 var stripe = Stripe(
   "pk_test_51J5QHpFYy5pEztMBUDR1geVmNVFKynLXhlOXBM5LhiC2cvIqj1tE6pouRtl38aQHBqFNWqZcNdAJP3ozoFjvIEXZ00JkInF3o4"
 );
 
-const $form = $("#checkout-form");
-$form.submit((event) => {
+const form = $("#checkout-form");
+form.submit((event) => {
   $("#payment=error").removeClass("hidden");
-  $form.find("button").prop("disable", true); //now user can not submit the form multiple times
+  form.find("button").prop("disable", true); //now user can not submit the form multiple times
   Stripe.card.createToken(
     {
       number: $("#card-number").val(),
@@ -28,15 +27,15 @@ const StripeResponseHandler = (status, response) => {
     //show the error an the form
     $("#payment=error").text(response.error.message);
     $("#payment=error").removeClass("hidden");
-    $form.find("button").prop("disabled", false); //Re-enable submission
+    form.find("button").prop("disabled", false); //Re-enable submission
   } else {
     //Token was created!
     //Get the token Id:
     const token = response.id;
     //Insert the token into form so it gets submitted to the server
-    $form.append($('<input type="hidden" name="stripeToken" />').val(token));
+    form.append($('<input type="hidden" name="stripeToken" />').val(token));
     //Submit the form
-    $form.get(0).submit();
+    form.get(0).submit();
   }
 };
 
