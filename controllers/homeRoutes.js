@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { Recipe, Category, User, OrderItem } = require("../models");
 const withAuth = require("../utils/auth");
-const Cart = require("../models/cart");
+const Cart = require("../models/Cart");
 
 /** Get home page */
 router.get("/", async (req, res) => {
@@ -71,12 +71,13 @@ router.get("/checkout", withAuth, (req, res) => {
 });
 
 //Create a payment
-router.post("/checkout", withAuth, (req, res) => {
+router.get("/checkout", withAuth, (req, res) => {
   if (!req.session.cart) {
     return res.redirect("/shoppingCart");
   }
-
+console.log (req.session.cart)
   const cart = new Cart(req.session.cart);
+  console.log (`~~~~2${req.session.cart}`)
 
   const stripe = require("stripe")(
     "sk_test_51J5QHpFYy5pEztMBbW3clhuZh7nhBf0S87skmrJs239FrQjAUYjrEQcyjZK9OQSawKvCvKOYOdBSVyqG1wC0oj4b008sorCnvB"
@@ -105,7 +106,7 @@ router.post("/checkout", withAuth, (req, res) => {
       // });
       // order.save((err, result) => {
       // req.flash("success", "Successfully payment made it!");
-      req.session.cart = null; //clear the cart
+      //req.session.cart = null; //clear the cart
       res.redirect("/");
       // });
     }
