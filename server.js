@@ -1,8 +1,8 @@
 const express = require("express");
 const session = require("express-session");
 const path = require("path");
-// const logger = require("morgan");
-// const cookieParser = require("cookie-parser");
+const logger = require("morgan");
+const cookieParser = require("cookie-parser");
 const expressHbs = require("express-handlebars");
 const routes = require("./controllers");
 const helpers = require("./utils/helpers");
@@ -14,8 +14,8 @@ const app = express();
 
 //app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-//app.use(logger("dev"));
-//app.use(cookieParser());
+app.use(logger("dev"));
+app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -37,7 +37,7 @@ const hbs = expressHbs.create({ helpers, extname: ".hbs" });
 
 const sess = {
   secret: "Super secret secret",
-  cookie: {},
+  cookie: { maxAge: 180 * 60 * 1000 },
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({

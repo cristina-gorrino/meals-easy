@@ -36,8 +36,7 @@ router.get("/add-to-cart/:id", async (req, res) => {
     res.redirect("/");
   } catch (error) {
     console.log(error);
-    alert("error");
-    // return res.redirect("/");
+    return res.redirect("/");
   }
 });
 
@@ -97,63 +96,41 @@ router.post("/checkout", withAuth, (req, res) => {
         return res.redirect("/checkout");
       }
       //create new order and place it in DB
-      let order = new OrderItem({
-        user: req.User,
-        cart: cart,
-        address: req.body.address,
-        name: req.body.name,
-        paymentId: charge.id,
-      });
-      order.save((err, result) => {
-        // req.flash("success", "Successfully payment made it!");
-        req.cart = null; //clear the cart
-        res.redirect("/");
-      });
+      // let order = new OrderItem({
+      //   user: req.User,
+      //   cart: cart,
+      //   address: req.body.address,
+      //   name: req.body.name,
+      //   paymentId: charge.id,
+      // });
+      // order.save((err, result) => {
+      // req.flash("success", "Successfully payment made it!");
+      req.session.cart = null; //clear the cart
+      res.redirect("/");
+      // });
     }
   );
 });
 
-//
-// router.get("/", async (req, res) => {
-//   try {
-//     const recipeData = await Recipe.findAll({
-//       include: [{ model: Category }],
-//     });
-//     const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
-
-//     const successMsg = req.flash("success")[0];
-
-//     res.render("homepage", {
-//       recipes,
-//       successMsg: successMsg,
-//       noMessage: !successMsg,
-//       logged_in: req.session.logged_in,
-//     });
-//   } catch (error) {
-//     res.status(500).json(error);
-//     console.log(error);
-//   }
-// });
-
-// // Use withAuth middleware to prevent access to route
-// router.get("/profile", withAuth, async (req, res) => {
-//   try {
-//     // Find the logged in user based on the session ID
-//     const userData = await User.findByPk(req.session.user_id, {
-//       attributes: { exclude: ["password"] },
-//       include: [{ model: Recipe }],
-//     });
-
-//     const user = userData.get({ plain: true });
-
-//     res.render("homepage", {
-//       ...user,
-//       logged_in: true,
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+// Get a specific Recipe by id
+router.get("/recipe/:id", async (req, res) => {
+  try {
+    const recipeData = await Recipe.findByPk(req.params.id, {
+      include: [
+        {
+          model: Ingredients,
+        },
+      ],
+    });
+    const recipe = recipeData.get({ plain: true });
+    res.render("recipe", {
+      ...recipe,
+      logged_in: req.session.logged_in,
+    });
+  } catch (error) {
+    res.status(500).json(error);
+  }
+});
 
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route

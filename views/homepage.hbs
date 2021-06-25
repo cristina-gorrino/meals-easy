@@ -1,27 +1,32 @@
-  <!-- Banner -->
-    <section class="banner">
-        <div class="inner-text">
-            <h1>Popular Menu Items</h1>
-            <p>Have you ever wanted to cook something delicious but you didn't always have the right ingredients? Well you can finally stop going to the grocery store because with Meals easy we do it for you. Browse our wonderful selection of recipes. Once you find what you want add it to your cart and we'll send you a confirmation email. <br></p>
-        </div>
-    </section>
-    {{#each recipes as |recipe|}}
+<!-- Banner -->
+<section class="banner">
+  <div class="inner-text">
+    <h1>Popular Menu Items</h1>
+    <p>Have you ever wanted to cook something delicious but you didn't always
+      have the right ingredients? Well you can finally stop going to the grocery
+      store because with Meals easy we do it for you. Browse our wonderful
+      selection of recipes. Once you find what you want add it to your cart and
+      we'll send you a confirmation email.
+      <br /></p>
+  </div>
+</section>
+{{#each recipes as |recipe|}}
   <!-- <div class="row"> -->
-    <div class="card">
-                {{{renderImage recipe_name}}}
-                <h3>{{recipe.category.Category_name}}</h3>
-                <h4>{{recipe.recipe_name}}</h4>
-                <p>{{recipe.recipe_description}}
-                </p>
-                <p>
-                  ${{recipe.unit_price}}
-                </p>
-                <a href="/recipe/{{recipe.id}}" class="btn">More Info</a>
-                <a
-                href="/add-to-cart/{{recipe.id}}"
-                class="btn btn-success pull-right"
-                role="button"
-              >Add to cart</a>
-            </div>
-  
+  <div class="card">
+    {{{renderImage recipe_name}}}
+    <h3>{{recipe.category.Category_name}}</h3>
+    <h4>{{recipe.recipe_name}}</h4>
+    <p>{{recipe.recipe_description}}
+    </p>
+    <p>
+      ${{recipe.unit_price}}
+    </p>
+    <a href="/recipe/{{recipe.id}}" class="btn">More Info</a>
+    <a
+      href="/add-to-cart/{{this.id}}"
+      class="btn btn-success pull-right"
+      role="button"
+    >Add to cart</a>
+  </div>
+
 {{/each}}

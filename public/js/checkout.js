@@ -1,5 +1,5 @@
 const { response } = require("express");
-
+//fetch the data from form
 var stripe = Stripe(
   "pk_test_51J5QHpFYy5pEztMBUDR1geVmNVFKynLXhlOXBM5LhiC2cvIqj1tE6pouRtl38aQHBqFNWqZcNdAJP3ozoFjvIEXZ00JkInF3o4"
 );
