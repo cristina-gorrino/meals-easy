@@ -1,7 +1,6 @@
 const express = require("express");
 const session = require("express-session");
 const path = require("path");
-const logger = require("morgan");
 const cookieParser = require("cookie-parser");
 const expressHbs = require("express-handlebars");
 const routes = require("./controllers");
