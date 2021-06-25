@@ -31,6 +31,11 @@ Recipe.init(
             type: DataTypes.DECIMAL(12,2),
             allowNull: false,
         },
+        quantity: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            defaultValue: 1,
+          },
         category_id: {
             type: DataTypes.INTEGER,
             allowNull: false,

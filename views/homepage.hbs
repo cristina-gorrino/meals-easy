@@ -17,6 +17,11 @@
                   ${{recipe.unit_price}}
                 </p>
                 <a href="/recipe/{{recipe.id}}" class="btn">More Info</a>
+                <a
+                href="/add-to-cart/{{recipe.id}}"
+                class="btn btn-success pull-right"
+                role="button"
+              >Add to cart</a>
             </div>
   
 {{/each}}
