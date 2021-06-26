@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { Recipe, Category, User, Ingredients } = require("../models");
 const withAuth = require("../utils/auth");
-const Cart = require("../models/Cart");
+const Cart = require("../models/cart");
 
 /** Get home page */
 router.get("/", async (req, res) => {
