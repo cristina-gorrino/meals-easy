@@ -1,7 +1,7 @@
 # Meals Easy
 
 GitHubLink https://github.com/cristina-gorrino/meals-easy
-HerokuLink
+HerokuLink https://meals-easy.herokuapp.com/
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
