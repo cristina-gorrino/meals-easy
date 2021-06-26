@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 const expressHbs = require("express-handlebars");
 const routes = require("./controllers");
 const helpers = require("./utils/helpers");
+const flash = require("flash");
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
@@ -44,6 +45,7 @@ const sess = {
 };
 
 app.use(session(sess));
+app.use(flash());
 
 // // Inform Express.js on which template engine to use
 app.engine("hbs", hbs.engine);
