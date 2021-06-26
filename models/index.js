@@ -1,5 +1,5 @@
 const User = require("./User");
-const Category = require("./Category");
+const Category = require("./category");
 const Ingredients = require("./Ingredients");
 const Recipe = require("./Recipe");
 const ShoppingCart = require("./ShoppingCart");
