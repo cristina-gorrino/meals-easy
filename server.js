@@ -6,6 +6,13 @@ const expressHbs = require("express-handlebars");
 const routes = require("./controllers");
 const helpers = require("./utils/helpers");
 
+//
+// if (process.env.NODE_ENV != "production") {
+//   require("dotenv").config({ path: "./.env" });
+// }
+// const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
+// const stripe = process.env.STRIPE_PUBLIC_KEY;
+
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
@@ -17,17 +24,6 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, "public")));
 
-// // res.locals is an object passed to hbs engine
-// app.use((req, res, next) => {
-//   res.locals.session = req.session;
-//   next();
-// });
-
-//TEMPORARY
-// const index = require("./routes/index");
-// app.use(index);
-
-// To begin using node-mysql-admin
 const PORT = process.env.PORT || 3002;
 
 // Set up Handlebars.js engine with custom helpers
