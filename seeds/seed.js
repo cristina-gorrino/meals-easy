@@ -14,7 +14,6 @@ const recipeData = require("./recipeData.json");
 const shoppingCartData = require("./shoppingCartData.json");
 
 const seedDatabase = async () => {
-  console.log(typeof shoppingCartData, typeof shoppingCartData[0].customer_id);
   //sync({ force: true }) -> dropping all tables if exist and then creating them but the seed file is not running.
   await sequelize.sync({ force: false });
 

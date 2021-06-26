@@ -1,15 +1,16 @@
+
 {{#if recipes}}
 <div class="row">
   <div class="col-sm-6 col-md-4 col-md-offset-3 col-sm-offset-3">
     <ul class="list-group">
       {{#each recipes as |recipe|}}
       <li class="list-group-item"></li>
-      <strong>{{ item.recipe_name }}</strong>
-        <span>price: ${{item.unit_price}}</span>
+      <strong>{{ item_name }}</strong>
+        <span>price: ${{item_price}}</span>
         <div class="float-right">
             <h5>
                 <a href="/reduce/{{ this.item.id }}"><i class="fas fa-minus-square"></i></a>
-                <i>{{item.quantity}}</i>
+                <i>{{quantity}}</i>
                 <a href="/addByOne/{{ this.item.id }}"><i class="fas fa-plus-square"></i></a>
             </h5>                            
         </div>
@@ -28,7 +29,7 @@
 <hr />
 <div class="row">
   <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
-    <a href="/checkout" class="btn btn-success" type="button">Checkout</a>
+    <button type="button" id="checkout-button">Checkout</button>
   </div>
 </div>
 {{else}}
@@ -38,3 +39,32 @@
   </div>
 </div>
 {{/if}}
+<script type="text/javascript">
+    // Create an instance of the Stripe object with your publishable API key
+    //zvar stripe = Stripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
+    var stripe = Stripe("pk_test_51J6TmYEPrS6QhBr8zjRIBZMytTo3yaGzs01Jgi6nKqAchQoHHb9iksirPgN9sl5vT0DcrVGuCfYHAS5avhRNOG8i00b7i7C49I");
+    var checkoutButton = document.getElementById("checkout-button");
+
+    checkoutButton.addEventListener("click", function () {
+      fetch("/create-checkout-session", {
+        method: "POST",
+      })
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (session) {
+          return stripe.redirectToCheckout({ sessionId: session.id });
+        })
+        .then(function (result) {
+          // If redirectToCheckout fails due to a browser or network
+          // error, you should display the localized error message to your
+          // customer using error.message.
+          if (result.error) {
+            alert(result.error.message);
+          }
+        })
+        .catch(function (error) {
+          console.error("Error:", error);
+        });
+    });
+  </script>
