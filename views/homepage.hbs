@@ -10,7 +10,10 @@
       <br></p>
   </div>
 </section>
+  <section class="inner-info">
+    <div class="info">
 {{#each recipes as |recipe|}}
+  
   <!-- <div class="row"> -->
   <div class="card">
     {{{renderImage recipe_name}}}
@@ -28,5 +31,6 @@
       role="button"
     >Add to cart</a>
   </div>
-
 {{/each}}
+</div>
+  </section>
