@@ -11,7 +11,7 @@ const userData = require("./userData.json");
 const categoryData = require("./categoryData.json");
 const ingredientsData = require("./ingredientsData.json");
 const recipeData = require("./recipeData.json");
-const shoppingCartData = require("./shoppingCartData.json");
+const shoppingCartData = require("./shoppingcartData.json");
 
 const seedDatabase = async () => {
   //sync({ force: true }) -> dropping all tables if exist and then creating them but the seed file is not running.
