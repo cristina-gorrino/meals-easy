@@ -19,7 +19,7 @@ router.get("/", async (req, res, ) => {
     },
   });
       let message = {
-        to: `${name} <${email}>`, 
+        to: 'mealseasy_360@yahoo.com', //`${name} <${email}>`, 
         from: "Meals Easy mealseasy3@gmail.com",
         subject: `Your Meals Easy Order`,
         text: ``,
